@@ -14,7 +14,6 @@ import { ServiceRequest } from "./components/ServiceRequest";
 import { EnquiryList } from "./components/EnquiryList";
 import { ServiceRequestList } from "./components/ServiceRequestList";
 import { VehicleList } from "./components/VehicleList";
-import { ServiceDetail } from "./components/ServiceDetail";
 function App() {
   return (
     <div>
@@ -55,9 +54,6 @@ function App() {
         </Route>
         <Route path="/vehiclelist">
           <VehicleList />
-        </Route>
-        <Route path="/servicedetails">
-          <ServiceDetail />
         </Route>
       </Router>
     </div>
