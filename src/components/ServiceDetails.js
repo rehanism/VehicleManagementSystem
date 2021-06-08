@@ -1,4 +1,4 @@
-import { ServiceDetailsList } from "./components/ServiceDetailsList";
+import { ServiceDetailsList } from "./ServiceDetailsList";
 export function ServiceDetails() {
   return (
     <div className="row" style={{ marginTop: "30px" }}>
