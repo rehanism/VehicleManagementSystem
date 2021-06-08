@@ -1,3 +1,4 @@
+import { ServiceDetailsList } from "./components/ServiceDetailsList";
 export function ServiceDetails() {
   return (
     <div className="row" style={{ marginTop: "30px" }}>
@@ -10,7 +11,7 @@ export function ServiceDetails() {
             //value={firstName}
             // onChange={(e) => updateFirstName(e)}
             className="form-control"
-            placeholder="Enter Vehicle Reg no"
+            placeholder="Enter Vehicle Reg. No."
           />
         </div>
         <div>
@@ -18,6 +19,7 @@ export function ServiceDetails() {
             <input
               type="button"
               className="btn btn-success w-100"
+              onClick={ServiceDetailsList}
               value="Check Status"
             />
           </div>
