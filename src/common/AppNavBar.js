@@ -25,6 +25,9 @@ export function AppNavBar() {
           <Nav.Link as={Link} to="/servicerequest">
             Service Request
           </Nav.Link>
+          <Nav.Link as={Link} to="/servicedetails">
+            Service Details
+          </Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
