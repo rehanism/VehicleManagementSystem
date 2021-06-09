@@ -3,7 +3,9 @@ export function UserRegister() {
     <div className="row" style={{ marginTop: "30px" }}>
       <div className="col-3 col-md-3 d-none d-md-block"></div>
       <div className="col-12 col-md-6">
-        <div className="alert alert-success">User Added</div>
+        <h3 class=" border border-primary p-3 mb-2 bg-dark text-primary">
+          Sign-Up/Register
+        </h3>
         <div className="mb-1">
           <input
             type="text"
@@ -52,7 +54,7 @@ export function UserRegister() {
         <div className="mb-1">
           <input
             type="button"
-            className="btn btn-success w-100"
+            className="form-control btn btn-outline-primary"
             value="Register"
             //onClick={(e) => addEmployee(e)}
           />
