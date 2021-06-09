@@ -15,12 +15,16 @@ import { EnquiryList } from "./components/EnquiryList";
 import { ServiceRequestList } from "./components/ServiceRequestList";
 import { VehicleList } from "./components/VehicleList";
 import { ServiceDetails } from "./components/ServiceDetails";
-import { Home } from "./component/Home";
+import { Home } from "./components/Home";
+import { Login } from "./components/Login";
 function App() {
   return (
     <div>
       <Router>
         <AppNavBar />
+        <Route path="/login">
+          <Login />
+        </Route>
         <Route path="/home">
           <Home />
         </Route>

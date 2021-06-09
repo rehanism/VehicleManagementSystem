@@ -21,7 +21,7 @@ export function Home() {
             />
             <input
               type="button"
-              value="Guest User"
+              value="User Register"
               className="form-control btn btn-outline-primary m-4 w-50"
               onClick={() => history.push("/guestuser")}
             />
