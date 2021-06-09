@@ -4,7 +4,7 @@ export function ServiceDetails() {
     <div className="row" style={{ marginTop: "30px" }}>
       <div className="col-3 col-md-3 d-none d-md-block"></div>
       <div className="col-12 col-md-6">
-        <h3 className="alert alert-success">Service Details</h3>
+        <h3 class=" p-3 mb-2 bg-dark text-white">Service Details</h3>
         <div className="mb-1">
           <input
             type="text"
@@ -18,7 +18,7 @@ export function ServiceDetails() {
           <div className="mb-1">
             <input
               type="button"
-              className="btn btn-success w-100"
+              className="btn btn-dark w-100"
               onClick={ServiceDetailsList}
               value="Check Status"
             />

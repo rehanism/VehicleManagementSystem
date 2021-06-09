@@ -17,10 +17,16 @@ import { VehicleList } from "./components/VehicleList";
 import { ServiceDetails } from "./components/ServiceDetails";
 import { Home } from "./components/Home";
 import { Login } from "./components/Login";
-import background from "./components/33115.jpg";
+import background from "./components/background.jpg";
 function App() {
+  const divStyle = {
+    width: "100%",
+    height: "600px",
+    backgroundImage: `url(${background})`,
+    backgroundSize: "cover",
+  };
   return (
-    <div style={{ backgroundImage: `url(${background})` }}>
+    <div className="cComponent" style={divStyle}>
       <Router>
         <AppNavBar />
         <Route path="/login">
