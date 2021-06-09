@@ -1,76 +1,36 @@
-import React, { Component } from "react";
-import axios from "axios";
-
-export default class Login extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      email: "",
-      password: "",
-      loginErrors: "",
-    };
-
-    this.handleSubmit = this.handleSubmit.bind(this);
-    this.handleChange = this.handleChange.bind(this);
-  }
-
-  handleChange(event) {
-    this.setState({
-      [event.target.name]: event.target.value,
-    });
-  }
-
-  handleSubmit(event) {
-    const { email, password } = this.state;
-
-    axios
-      .post(
-        "http://localhost:3001/sessions",
-        {
-          user: {
-            email: email,
-            password: password,
-          },
-        },
-        { withCredentials: true }
-      )
-      .then((response) => {
-        if (response.data.logged_in) {
-          this.props.handleSuccessfulAuth(response.data);
-        }
-      })
-      .catch((error) => {
-        console.log("login error", error);
-      });
-    event.preventDefault();
-  }
-
-  render() {
-    return (
-      <div>
-        <form onSubmit={this.handleSubmit}>
-          <input
-            type="email"
-            name="email"
-            placeholder="Email"
-            value={this.state.email}
-            onChange={this.handleChange}
-            required
-          />
-
-          <input
-            type="password"
-            name="password"
-            placeholder="Password"
-            value={this.state.password}
-            onChange={this.handleChange}
-            required
-          />
-
-          <button type="submit">Login</button>
-        </form>
+export function Login() {
+  return (
+    <div className="col" style={{ marginTop: "30px" }}>
+      <div className="col-3 col-md-3 d-none d-md-block"></div>
+      <div className="col-12 col-md-6">
+        <h3 class=" p-3 mb-2 bg-dark text-white">Log In</h3>
+        <div>
+          <form>
+            <div className="mb-1">
+              <input
+                type="username"
+                name="username"
+                className="form-control"
+                placeholder="username..."
+                required
+              />
+            </div>
+            <div className="mb-1">
+              <input
+                type="password"
+                name="password"
+                className="form-control"
+                placeholder="password..."
+                required
+              />
+            </div>
+            <div className="mb-1">
+              <button className="btn btn-dark">Log In</button>
+            </div>
+          </form>
+        </div>
       </div>
-    );
-  }
+      <div className="col-3 col-md-3  d-none d-md-block"></div>
+    </div>
+  );
 }

@@ -17,9 +17,10 @@ import { VehicleList } from "./components/VehicleList";
 import { ServiceDetails } from "./components/ServiceDetails";
 import { Home } from "./components/Home";
 import { Login } from "./components/Login";
+import background from "./components/33115.jpg";
 function App() {
   return (
-    <div>
+    <div style={{ backgroundImage: `url(${background})` }}>
       <Router>
         <AppNavBar />
         <Route path="/login">
