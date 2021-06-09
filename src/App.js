@@ -15,11 +15,15 @@ import { EnquiryList } from "./components/EnquiryList";
 import { ServiceRequestList } from "./components/ServiceRequestList";
 import { VehicleList } from "./components/VehicleList";
 import { ServiceDetails } from "./components/ServiceDetails";
+import { Home } from "./component/Home";
 function App() {
   return (
     <div>
       <Router>
         <AppNavBar />
+        <Route path="/home">
+          <Home />
+        </Route>
         <Route path="/user-register">
           <UserRegister />
         </Route>
