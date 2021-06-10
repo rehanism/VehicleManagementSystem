@@ -5,7 +5,7 @@ import thunk from "redux-thunk";
 import { LoginReducer } from "./LoginReducer";
 
 const rootReducer = combineReducers({
-  Login: LoginReducer,
+  userLogin: LoginReducer,
 });
 const store = createStore(rootReducer, applyMiddleware(thunk));
 export { store };

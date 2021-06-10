@@ -17,6 +17,7 @@ import { VehicleList } from "./components/VehicleList";
 import { ServiceDetails } from "./components/ServiceDetails";
 import { Home } from "./components/Home";
 import { Login } from "./components/Login";
+import { User } from "./components/User";
 import background from "./components/background.jpg";
 function App() {
   const divStyle = {
@@ -73,6 +74,9 @@ function App() {
         </Route>
         <Route path="/servicedetails">
           <ServiceDetails />
+        </Route>
+        <Route path="/user">
+          <User />
         </Route>
       </Router>
     </div>

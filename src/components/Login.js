@@ -17,7 +17,7 @@ export const Login = () => {
   const updateUserEmail = (e) => setUserEmail(e.target.value);
   const updateUserPassword = (e) => setUserPassword(e.target.value);
 
-  const UserLoginFunction = () => {
+  const LoginFunction = () => {
     dispatch(
       LoginAction({
         userEmail,
@@ -44,7 +44,7 @@ export const Login = () => {
         <h3 class=" border border-primary p-3 mb-2 bg-dark text-primary">
           Log In
         </h3>
-        {state.UserLogin.loginAction === false && errorOperation && (
+        {state.Login.loginAction === false && errorOperation && (
           <div className="alert alert-danger">login failure</div>
         )}
         <div>
@@ -72,7 +72,7 @@ export const Login = () => {
               <button
                 className="form-control btn btn-outline-primary"
                 value="Login"
-                onClick={() => UserLoginFunction()}
+                onClick={() => LoginFunction()}
               >
                 Log In
               </button>
