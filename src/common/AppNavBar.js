@@ -47,7 +47,7 @@ export function UserNavBar() {
     </Navbar>
   );
 }
-export function adminNavbar() {
+export function AdminNavBar() {
   return (
     <Navbar bg="dark" expand="lg" variant="dark">
       <Navbar.Brand as={Link} to="/">

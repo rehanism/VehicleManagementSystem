@@ -17,13 +17,13 @@ export function Home() {
               type="button"
               value="User Login"
               className="form-control text-center btn btn-outline-primary m-4 w-50"
-              onClick={() => history.push("/userlogin")}
+              onClick={() => history.push("/login")}
             />
             <input
               type="button"
               value="User Register"
               className="form-control btn btn-outline-primary m-4 w-50"
-              onClick={() => history.push("/adminlogin")}
+              onClick={() => history.push("/user-register")}
             />
             <input
               type="button"
