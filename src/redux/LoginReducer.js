@@ -13,7 +13,7 @@ export function LoginAction(payload) {
   return async (dispatch) => {
     // WE HV TO CALL THE SPRINT1 / SPRING BOOT
     try {
-      const url = "http://localhost:8090/api/login";
+      const url = "";
       const requestBody = { ...payload };
 
       // HTTP Client

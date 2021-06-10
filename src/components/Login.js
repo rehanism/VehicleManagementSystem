@@ -31,11 +31,11 @@ export const Login = () => {
     console.log(state.userEmail, state.userPassword);
   };
 
-  if (state.UserLogin.loginAction === true) {
+  /* if (state.ogin.loginAction === true) {
     history.push("/user");
 
     return <div></div>;
-  }
+  }*/
 
   return (
     <div className="row" style={{ marginTop: "30px" }}>
@@ -44,9 +44,7 @@ export const Login = () => {
         <h3 class=" border border-primary p-3 mb-2 bg-dark text-primary">
           Log In
         </h3>
-        {state.Login.loginAction === false && errorOperation && (
-          <div className="alert alert-danger">login failure</div>
-        )}
+
         <div>
           <form>
             <div className="mb-1">
