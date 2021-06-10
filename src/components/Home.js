@@ -29,7 +29,7 @@ export function Home() {
               type="button"
               value="Admin Login"
               className="form-control btn btn-outline-primary m-4 w-50"
-              onClick={() => history.push("/guestuser")}
+              onClick={() => history.push("/")}
             />
           </div>
         </div>
